@@ -1,0 +1,67 @@
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: rgb(123, 121, 143); 
+}
+body {
+	width: 960px;
+	background: #fff;
+	margin: 0 auto 2em;
+	font-family: Georgia;
+}
+header {
+	background: rgb(76, 67, 65);
+	margin-bottom: 0px;
+}
+header h1 {
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin: 0;
+}
+nav {
+	background: rgb(237, 228, 214);
+	padding: 2px 5px;
+	text-align: center;
+}
+.col1 {
+	background: rgb(219,126,64);
+	margin: 0px 0px 0px 15px;
+	height: 500px;
+	padding: 20px;
+	width: 480px;
+	float: left;
+
+}
+.col2 {
+	background: rgb(173, 169, 130);
+	height: 500px;
+	padding: 20px;
+	width: 200px;
+	float: right;
+}
+
+footer {
+	background: rgb(100, 98, 102);
+	line-height: 40px;
+	font-size: 15px;
+	color: white;
+	padding: 0 20px;
+	clear: both;
+}
+
+nav ul li {
+	margin: 0px 5px;
+	text-decoration: underline;
+	display: inline;
+	font-weight: bold;
+	color: red;
+}

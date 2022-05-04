@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Format Exercise</title>
+	<style>
+		div {
+			padding: 20px 0px ;
+		}
+
+		.container
+		{ 
+			/* fits as many columns it can that are of this size */
+			column-width: 12em; 
+		} 
+
+		.twocontainer {
+			/* fixed 2 containers */
+			column-count: 2;
+		}
+
+		.flexcontainer {
+			display: flex;
+			flex: 1;
+		}
+
+		.gridcontainer {
+			display: grid; 
+			/* gives it the amount of columns and how many columns spaces they take */
+			grid-template-columns: 1fr 1fr 1fr; 
+			column-gap: 5%;
+		}
+	</style>
+  </head>
+
+  <body>
+	<div>
+		<h1>HTML Responsive Exercise</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+		euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+		nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+		 euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+		nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+	   </div>
+	<div class="container">
+     <h1>HTML Responsive Exercise</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+     euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+     nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+      euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+     nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+    </div>
+	<div class="twocontainer">
+		<h1>HTML Responsive Exercise</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+		euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+		nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+		 euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+		nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+	</div>
+
+	<div class="flexcontainer">
+		<h1>HTML Responsive Exercise</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+		euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+		nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+		 euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+		nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+	</div>
+
+	<div class="gridcontainer">
+		<h1>HTML Responsive Exercise</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+		euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+		nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+		 euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim 
+		nibh, sodales ultricies elementum vel, fermentum id tellus.</p>
+	</div>
+   </body>
+</html>

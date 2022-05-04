@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title></title>
+		<style>
+			em {
+				font-style: italic; 
+				font-variant: small-caps;
+				font-weight: bold;
+				font-size: 25pt;
+				/* the type of font */
+				font-family: 'Times New Roman', Times, serif;
+			}
+
+			strong {
+				/* a shorthand for defining all of the font types */
+				font: bold 12px beablowercase;
+				color: forestgreen;
+				background-color: antiquewhite;
+			}
+
+			/* getting a font from the web to use, rather than pre downloaded */
+			@font-face {
+				/* gives it a new name for the font you are downloaded */
+				font-family: newFont;
+				src: url("ttps://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0");
+			}
+
+			.usefont {
+				font-family: newFont;
+			}
+		</style>
+	</head>
+	<body>
+		<em>this is em text</em>
+		<strong>this is strong text</strong>
+		<p class="usefont">this should use the font?</p>
+	</body>
+</html>

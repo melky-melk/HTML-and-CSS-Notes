@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form By List
+    </title>
+</head>
+<body>
+	<form id="customer" action="submit.htm">
+	<fieldset>
+   	<legend>Your details</legend>
+    <ol>
+            <li>
+              <label for="nameFirst">First Name</label>
+              <input id="nameFirst" name="nameFirst" placeholder="Jane" required="" autofocus="" type="text" />
+             </li>
+      </ol>
+    </fieldset>     
+     <fieldset>
+            <legend>Ownership Details</legend>
+            <ol>
+                <li>
+                    <label class="transport" for="car">Car</label>
+                    <input id="car" name="transportType" type="checkbox" />
+                </li>       
+                <li>
+                    <label class="transport" for="bicycle">Bicycle</label>
+                    <input id="bicycle" name="transportType" type="checkbox" />
+                </li>           
+                <li>
+                    <label class="transport" for="aeroplane">Aeroplane</label>
+                    <input id="aeroplane" name="transportType" type="checkbox" />
+                </li>           
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Study Habits</legend>
+            <ol>
+                <li>
+                    <label for="study">I Study</label>
+                    <select id="study">
+                        <option>I don't study</option>
+                        <option>&lt; 1 hr / week</option>
+                        <option>&lt; 5 hr / week</option>
+                        <option>&lt; 10 hr / week</option>
+                        <option>&gt; 10 hr / week</option>
+                   </select>
+                </li>
+            </ol>
+        </fieldset>     
+        <fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </fieldset>
+    </form>
+</body>
+</html>

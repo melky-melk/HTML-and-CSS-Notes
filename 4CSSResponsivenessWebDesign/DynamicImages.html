@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title></title>
+		<style>
+			img.fluid {
+				width: 50%;
+			}
+
+			img.elastic {
+				/* so it scales with the text size */
+				width: 20em;
+				max-width: 500px;
+			}
+			/* This technique creates what appears to be a single image out of multiple pieces that slide over and away from each other. To achieve this, you will need a nested block element to place each as a background image: */
+
+			#outer{
+				width: 100%;
+				max-width: 1000px;
+				height: 300px;
+				background: url(skyline.jpg) no-repeat;
+			}
+
+
+			#inner{
+				position: absolute;
+				top: 50px;
+				right: 50px;
+				width: 100px;
+				height: 250px;
+				background: url(ufo.png) no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- defines the image filename space? and width -->
+		<img srcset="cat-480w.jpg 480w,
+             cat-800w.jpg 800w"
+			sizes="(max-width: 600px) 480px,
+					800px"
+			src="cat-800w.jpg" alt="A Cat">
+
+			<!-- As a result with the srcset and sizes attribute of <img> tag set, the browser will work as follows:
+			The browser will first look at the device's width
+			Then it will work out to see which one in the media condition defined in sizes is true.
+			Then it will take that slot size and load the image referenced in srcset which matches closely.
+			If the browser does not support the srcset attribute, it will use the as usual src attribute to load the image. -->
+	</body>
+</html>

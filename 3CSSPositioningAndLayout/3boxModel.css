@@ -1,0 +1,29 @@
+aside, article, section, header, footer, nav {
+	display: block;
+}
+/* Apply styles to both the idv tag and p tag.
+The div tag groups any element. 
+Compare this to your structural tag 
+e.g. header, section, nav, which groups specific content */
+
+div {
+	margin: 10px;
+	padding:10px;
+	background-color: plum;
+}
+
+p {
+	margin: 0;
+	padding:0;
+	background-color: cornflowerblue;
+	font: bold 16px beablowercase;
+}
+
+html {
+	background-color: #ccc;
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+	background: #fff;
+}

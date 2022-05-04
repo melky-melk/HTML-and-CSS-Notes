@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Practice CSS</title>
+
+		<style>
+			/* CSS IS SELECTORS AND DECLARATIONS, declarations being the things inside the curly braces
+			selector {
+				DECLARATION
+				property: value;
+			}
+			*/
+			
+			/* will affect all of the tags with strong in it */
+			strong {
+				color: red;
+				font-weight: bold;
+			}
+
+			/* the specific tags are denoted like this */
+			h1, h2, h3 {
+				color: purple;
+				font-weight: bold;
+			}
+			
+			/* the "*" is a universal selector, meaning that it would go through all the elements and change it  */
+			/* if not over ridden, this would apply to all of the tags */
+			* {
+				color:black;
+				font-family: beablowercase;
+			}
+
+			/* a collection of different tags that would have the attributes of the
+			that would*/
+			.username {
+				color: blue;
+				background-color: bisque;
+			}
+			
+			/* Now, any paragraphs with a class "quote" will have a grey background colour and a bold effect. */
+			p.emphasis{
+				font-style: italic;
+				color: rgb(235, 64, 52);
+			}
+
+			/* Used to style a single, unique element identified by their ID. 
+			To use this selector, define a hash, "#" followed by the ID 
+			(similar to the hyperlink bookmark) */
+			#maincontent {
+				color: rgb(100, 50, 200);
+				text-align: center;
+			}
+
+			/* Now, any hyperlinks with a href attribute will be set to uppercase and italicised. */
+			a[href]{
+				text-transform: uppercase;
+				font-style: italic;
+			}
+
+			/* all images with an alternate equalling "computer" will have a 200px width and 150px height. */
+			img[alt = "computer"]{
+				width: 200px;
+				height: 150px;
+			}
+
+			/* Used to style certain elements, but characterised by special states. 
+			To use this selector, define a colon, ":", followed by the pseudo-class name. */
+			a:hover {
+				font-variant: small-caps;
+				text-decoration: underline;
+			}
+
+			/* 
+			Now, when a hyperlink is moused over, the font will transition to an underline and small capitalisation state.
+
+			All HTML elements can have a hover state. The anchor tag, however, has further special states:
+
+			:link to style links to unvisited pages,
+			:visited to style links to visited pages,
+			:active to style the active link. */
+		</style>
+	</head>
+
+	<body>
+		<h1>testing the different font things</h1>
+
+		<p class = "username">melk#9755</p>
+		<p>different this is <strong>bold</strong> </p>
+
+		<!-- the class overrides the style for h1 -->
+		<h1 class = "username">lemonhorse</h1>
+		<p class = emphasis>doing things</p>
+
+		<p id = maincontent>misfits and magic class conflict</p>
+	</body>
+</html>
+
+<!-- A style is a definition for a particular look and feel, i.e. fonts, colours, sizes, etc. A style is made up of three parts: a selector; properties/attribute; and corresponding values
+
+The selector selects the elements you want to style
+The property and value are linked by a colon
+Each property and value pair is separated by a semi-colon
+ -->

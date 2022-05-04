@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>beab</title>
+	</head>
+
+	<body>
+
+		<!-- the form would guide the user to submit.html -->
+		<form id = "user" action="submit.html"></form>
+		
+		<!-- dividing each section of the form  -->
+		<fieldset>
+			<!-- the legend specifies a title of the field set? -->
+			<legend>How much are those guitar picks</legend>
+			<!-- detailed list (just indentation) -->
+			<dl>
+				<dd>
+					<label for = "cost">$</label>
+					<input id = "cost" name = "cost" placeholder = "24" required = "" autofocus = "" type = "number">
+				</dd>
+			</dl>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Favourite beab character</legend>
+
+				<label for = "character">My favourite is</label> 
+				<!-- a dropdown box for the optiobs -->
+				<select id = "character">
+					<option>Rae</option>
+					<option>Jess</option>
+					<option>Lincoln</option>
+					<option>Autumn</option>
+					<option>JJ</option>
+					<option>Avery</option>
+				</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Ownership Details</legend>
+			<!-- a list of checkboxes with multiple checkboxes -->
+			<ol>
+				<li>
+					<label class="transport" for="car">Car</label>
+					<input id="car" name="transportType" type="checkbox" />
+				</li>       
+				<li>
+					<label class="transport" for="bicycle">Bicycle</label>
+					<input id="bicycle" name="transportType" type="checkbox" />
+				</li> 
+				<li>
+					<label class="transport" for="aeroplane">Aeroplane</label>
+					<input id="aeroplane" name="transportType" type="checkbox" />
+				</li>           
+			</ol>
+		</fieldset>
+
+		<fieldset>
+			<button type = "submit">Submit</button>
+			<button type = "reset">Clear</button>
+		</fieldset>
+	</form>
+</body>
+</html>

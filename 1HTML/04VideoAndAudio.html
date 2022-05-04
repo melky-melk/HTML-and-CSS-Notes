@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video and Audio</title>
+</head>
+
+<body>
+	<audio controls>
+		<!-- The presence of any <audio> attributes has an implicit "true" value so you do not need to type: <audio controls="true">. 
+		Similarly, the absence of any attributes indicates an implicit "false". -->
+	    <source src="happybirthday/happybirthday.ogg" type="audio/ogg" />
+	    <source src="happybirthday/happybirthday.mp3" type="audio/mp3" />
+        <source src="happybirthday/happybirthday.acc" type="audio/acc" />
+		
+		Your browser does not support the audio element.
+		<!-- The browser will try to use the first recognised format. 
+			If this does not work, it will try the second format under <source>. 
+			If this still doesn’t work, it will try the third format in the list 
+			and so on until finally, it will display the alternative error text message.-->
+		
+		</audio>
+
+		<video controls poster="card/poster.jpg">
+			<source src="card/card.ogg" type="video/ogg" />
+			<source src="card/card.mp4" type="video/mp4" />
+			<source src="card/card.webm" type="video/webm" />
+			Your browser does not support the video element.
+		</video>
+</body>
+</html>

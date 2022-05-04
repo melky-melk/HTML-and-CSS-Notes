@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>CSS Box Model</title>
+		<style>
+			p.seperatepadding{
+				/* does top right bottom left */
+				padding: 10px 20px 15px 10px;
+			}
+
+			p.allpadding {
+				/* for all of them */
+				padding: 10px;
+				border: 2px solid black; /* make sure to include border when calculating the total length*/
+			}
+			
+			/* note REMEMBER THAT MARGINS COLLAPSE IN ON EACH OTHER, MEANING TEHY CAN OVERLAP ON TOP OF EACH OTHER */
+			p.margin{
+				margin: 10px;
+			}
+
+			.center {
+				/* lets the browser set the margins, (the outer parts of the content) */
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			/* you can fix the width of your entire body so that it doesnt move weirdly when you resize the window*/
+
+			body {
+				width: 1200px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		
+	</body>
+</html>

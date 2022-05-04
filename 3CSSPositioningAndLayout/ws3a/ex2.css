@@ -1,0 +1,10 @@
+body {background-color: tan}
+h1 {color:maroon; font-size: 20pt; background-color: pink;}
+h2 {color:blue; font-size: 16pt; font-weight: bold; font-family: beablowercase;}
+hr {color:navy}
+p {margin: 15px; font-size:11pt; font-color:"black"}
+a:link {color:green}
+a:visited {color:cyan}
+a:hover {color:red}
+
+
