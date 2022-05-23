@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "8b7269c7f554ddc9",
+    "type": "split",
+    "children": [
+      {
+        "id": "da42978a9b9f2647",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Project Report.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7f3905bfd5d07008",
+    "type": "split",
+    "children": [
+      {
+        "id": "8618cde7da6fd93a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "101ae6b087be813b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b9d0ff6de258ea0d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 276
+  },
+  "right": {
+    "id": "6ff589f0163c224b",
+    "type": "split",
+    "children": [
+      {
+        "id": "163811824d80e473",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e38c4985a5f155d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Project Report.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "da42978a9b9f2647",
+  "lastOpenFiles": [
+    "Project Report.md"
+  ]
+}
